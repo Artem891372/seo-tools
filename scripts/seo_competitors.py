@@ -6,15 +6,15 @@
 
 Запуск:
   python3 scripts/seo_competitors.py \
-      --target a4doc=https://a4doc.ai/sitemap.xml \
-      --target diplox=https://diplox.online/sitemap.xml
+      --target example=https://example.com/sitemap.xml \
+      --target blog=https://example.com/blog/sitemap.xml
 
-  python3 scripts/seo_competitors.py --targets-file targets.json [--only a4doc]
+  python3 scripts/seo_competitors.py --targets-file targets.json [--only example]
   python3 scripts/seo_competitors.py --target https://example.com/sitemap.xml --quiet
 
 Файл targets.json (или объект {"имя": "url"}):
-  [["a4doc", "https://a4doc.ai/sitemap.xml"],
-   ["diplox", "https://diplox.online/sitemap.xml"]]
+  [["example", "https://example.com/sitemap.xml"],
+   ["blog", "https://example.com/blog/sitemap.xml"]]
 """
 from __future__ import annotations
 
